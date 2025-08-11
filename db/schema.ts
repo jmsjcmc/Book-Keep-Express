@@ -1,10 +1,11 @@
-import { pgTable, uuid, varchar} from 'drizzle-orm/pg-core';
+import { integer, pgTable, uuid, varchar} from 'drizzle-orm/pg-core';
 export const usersTable = pgTable("users_table", {
     id: uuid('id').primaryKey().defaultRandom(),
     firstName: varchar('first_name', { length: 50}).notNull(),
     lastName: varchar('last_name' , { length: 50}).notNull(),
     username: varchar('username', { length: 10}).notNull().unique(),
-    password: varchar('password', { length: 255}).notNull()
+    password: varchar('password', { length: 255}).notNull(),
+    role: integer('role').notNull().notNull()
 });
 
 export type InsertUser =  typeof usersTable.$inferInsert;

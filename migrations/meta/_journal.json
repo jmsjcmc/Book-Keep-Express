@@ -15,6 +15,13 @@
       "when": 1754889420158,
       "tag": "0001_rapid_supernaut",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1754893171762,
+      "tag": "0002_nosy_marvel_boy",
+      "breakpoints": true
     }
   ]
 }
