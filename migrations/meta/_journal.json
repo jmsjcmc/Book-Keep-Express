@@ -8,6 +8,13 @@
       "when": 1754884151920,
       "tag": "0000_nasty_crystal",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1754889420158,
+      "tag": "0001_rapid_supernaut",
+      "breakpoints": true
     }
   ]
 }
